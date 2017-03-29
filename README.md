@@ -111,7 +111,15 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/1.PNG)
 
 - Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+
+1. *Manage* Konten
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_1.PNG)
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_2.PNG)
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_3.PNG)
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_4.PNG)
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_5.PNG)
+
 
 
 ## Pembahasan
