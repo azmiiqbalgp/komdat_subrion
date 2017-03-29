@@ -139,6 +139,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 11. Pengguna tidak bisa mengganti dengan tema sendiri.
 
 - Komparasi aplikasi sejenis
+
 Aplikasi web PageKit merupakan CMS yang bisa dikatakan baru, namun memiliki beberapa fitur yang diunggulkan, di antaranya :
 1. Dibangun menggunakan *framework* PHP Symfony dan Vue.js
 2. Tampilan yang modern dan *responsive*, namun tetap terlihat sederhana
