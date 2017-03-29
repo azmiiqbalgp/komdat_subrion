@@ -108,6 +108,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 
 - Tampilan aplikasi web
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/1.PNG)
+
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
