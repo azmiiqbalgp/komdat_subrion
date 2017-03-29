@@ -115,9 +115,13 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 1. *Manage* Konten
 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_1.PNG)
+
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_2.PNG)
+
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_3.PNG)
+
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_4.PNG)
+
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_5.PNG)
 
 
