@@ -6,31 +6,31 @@
 
 ## Sekilas Tentang
 
-Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunakan.  Subrion muncul dengan banyak fitur yang bagus termasuk bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan smartphone, yang memungkinkan anda dapat mengelola konten anda dengan mudah kemana pun anda pergi. fitur manajemen untuk bidang item listing juga ada. Apakah bidang berhubungan dengan anggota, daftar otomatis, daftar real estate, kupon, atau apapun, dapat dengan mudah kamu memperpanjang daftar dengan bidang tambahan. Bidang ini dapat dibuat dalam berbagai bentuk, termasuk bidang teks, WYSIWYG, *checkboxes*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
+Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunakan. Subrion muncul dengan banyak fitur termasuk, bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan *smartphone*, yang memungkinkan pengguna dapat mengelola konten dengan mudah. Fitur manajemen untuk bidang item *listing* juga ada. Bidang yang berhubungan dengan anggota, daftar otomatis, daftar *real estate*, kupon, atau apapun, dapat dengan mudah diperpanjang dengan fitur tambahan. Bidang ini dapat dibuat dalam berbagai bentuk, termasuk bidang teks, WYSIWYG, *checkboxes*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
 
 
 ## Instalasi
 ### Kebutuhan
-1. Server Requirements
+1. *Server Requirements*
 - Linux/FreeBSD/Windows OS server platform
 - Apache 1.3 or above (mod_rewrite module installed)
 - MySQL 4.1 or above
 - PHP 5 or above (GD lib, XML lib, FreeType installed)
-2. Client Requirements
+2. *Client Requirements*
 - Web browser terbaru
 
-### Cara instalasi: 
+### Cara Instalasi: 
 1. Mengunduh file subrion terbaru. 
 ```
 $ wget https://tools.subrion.org/get/latest.zip
 ```
-2. Menyimpan file yang teruduh kedalam direktori subrion.
+2. Menyimpan file yang terunduh kedalam direktori subrion.
 ```
 $ sudo apt install unzip
 $ mkdir subrion
 $ cd subrion
 ```
-3. MengExtract atau mengUnzip file yang telah terunduh.
+3. Meng-*extract* atau meng-*unzip* file yang telah terunduh.
 ```
 $ mv latest.zip subrion
 $ unzip latest.zip
@@ -39,13 +39,13 @@ $ unzip latest.zip
 ```
 $ mv subrion /var/www/html
 ```
-5. Menginstall subrion 
+5. Meng-*install* subrion 
 - buka localhost:8888/subrion
 - username db: subrion
 - password db: subrion
 - nama db: subrion
 	
-### Membuat database :
+### Membuat Database :
 ```
 $ mysql -u root -p
 - password: student
@@ -92,7 +92,7 @@ $ sudo service apache2 restart
 ```
 
 
-## Maintenance
+## *Maintenance*
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
 - hapus tmp sehari sekali
