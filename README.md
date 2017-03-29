@@ -92,12 +92,7 @@ $ sudo service apache2 restart
 ```
 
 
-## *Maintenance*
-
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- hapus tmp sehari sekali
-- buat backup seminggu sekali
-- etc.
+## *Maintenance* (Opsional)
 
 
 ## Otomatisasi
@@ -124,6 +119,25 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_5.PNG)
 
+
+2. *Manage* Template
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/template_1.PNG)
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/template_2.PNG)
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/template_3.PNG)
+
+
+3. *Manage* Plugin
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/plugin_1.PNG)
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/plugin_2.PNG)
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/plugin_3.PNG)
+
+![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/plugin_4.PNG)
 
 
 ## Pembahasan
