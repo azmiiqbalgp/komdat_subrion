@@ -1,12 +1,12 @@
 # Aplikasi Web "Subrion"
-<h1 align="center"><img src="https://subrion.org/templates/org/img/fb_subrion-logo.png" width="500px"></h1>
+<center><img src="https://subrion.org/templates/org/img/fb_subrion-logo.png" width="500px"></center>
 
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 ## Sekilas Tentang
 
-Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunakan. Subrion muncul dengan banyak fitur termasuk, bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan *smartphone*, yang memungkinkan pengguna dapat mengelola konten dengan mudah. Fitur manajemen untuk bidang item *listing* juga ada. Bidang yang berhubungan dengan anggota, daftar otomatis, daftar *real estate*, kupon, atau apapun, dapat dengan mudah diperpanjang dengan fitur tambahan. Bidang ini dapat dibuat dalam berbagai bentuk, termasuk bidang teks, WYSIWYG, *checkboxes*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
+Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunakan. Subrion muncul dengan banyak fitur, termasuk bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan *smartphone*, yang memungkinkan pengguna dapat mengelola konten dengan mudah. Fitur manajemen untuk bidang item *listing* juga ada. *Field* yang berhubungan dengan anggota, daftar otomatis, daftar *real estate*, kupon, atau apapun, dapat dengan mudah diperpanjang dengan fitur tambahan. *Field* ini dapat dibuat dalam berbagai bentuk, termasuk *field* teks, WYSIWYG, *checkbox*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
 
 
 ## Instalasi
@@ -16,66 +16,81 @@ Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunak
 - Apache 1.3 or above (mod_rewrite module installed)
 - MySQL 4.1 or above
 - PHP 5 or above (GD lib, XML lib, FreeType installed)
+
 2. *Client Requirements*
 - Web browser terbaru
 
-### Cara Instalasi: 
-1. Mengunduh file subrion terbaru. 
+### Cara Instalasi
+1. Mengunduh file subrion terbaru 
 ```
 $ wget https://tools.subrion.org/get/latest.zip
 ```
-2. Menyimpan file yang terunduh kedalam direktori subrion.
+2. Mengekstrak file yang telah diunduh.
 ```
 $ sudo apt install unzip
+
 $ mkdir subrion
-$ cd subrion
+$ unzip -d subrion latest.zip
 ```
-3. Meng-*extract* atau meng-*unzip* file yang telah terunduh.
+4. Memindahkan direktori subrion ke  /var/www/html/
 ```
-$ mv latest.zip subrion
-$ unzip latest.zip
+$ sudo mv subrion /var/www/html
 ```
-4. Memindahkan direktori subrion ke  /var/www/html/ --
+5. Mengatur *permission* folder
 ```
-$ mv subrion /var/www/html
+$ cd /var/www/html/subrion
+
+$ chmod 777 backup/
+$ chmod 777 tmp/
+$ chmod 777 uploads/
 ```
-5. Meng-*install* subrion 
-- buka localhost:8888/subrion
-- username db: subrion
-- password db: subrion
-- nama db: subrion
-	
-### Membuat Database :
+6. Membuat user & database MySQL
 ```
 $ mysql -u root -p
-- password: student
 
-$ CREATE USER subrion IDENTIFIED BY ‘subrion’;
-$ CREATE DATABASE subrion;
-$ GRANT ALL PRIVILEGES ON subrion.* TO subrion;
-$ FLUSH PRIVILEGES;
+mysql> CREATE USER 'subrion'@'localhost' IDENTIFIED BY 'subrion';
+mysql> CREATE DATABASE subrion;
+mysql> GRANT ALL PRIVILEGES ON subrion2.* TO 'subrion'@'localhost';
+mysql> FLUSH PRIVILEGES;
 
-Quit
+mysql> quit
 ```
-### Membuat config.inc.php --#
-- copy code dari browser
+6. [Mengaktifkan mod_rewrite](#mengaktifkan-modrewrite).
+7. Meng-*install* subrion
+- Buka http://localhost:8888/subrion
+- Pada halaman *Pre-Installation Check*, pastikan semua yang dibutuhkan (*required*) terpenuhi. Jika sudah, klik tombol **Next**.
+- Pada halaman *Subrion License*, silakan baca peraturan dari lisensi. Jika setuju, klik tombol **Next**.
+- Pada halaman *Configuration*, isikan
+	-- DB username: `subrion`,
+	-- DB password: `subrion`,
+	-- DB name: `subrion`.
+	-- Username, password, dan email pada bagian *Administrator Configuration* bisa diisi sesuai keinginan.
+- Jika sudah, klik tombol *Istall*.
+
+### Membuat config.inc.php
+1. Setelah proses instalasi selesai, akan muncul pesan `Error during configuration write`.
+
+2. Salin kode  php dari browser. Jika belum muncul, klik tombol **View config file**.
+
+3. Buat file config.inc.php. 
 ```
 $ cd /var/www/html/subrion/includes
 $ nano config.inc.php
 ```
-- paste
-- write
-- close
+4. Tempel kode yang terlah disalin ke editor nano.
+5. Simpan (Ctrl+O) dengan nama config.inc.php (Enter).
+6. Tutup file (Ctrl+X).
 
 
 ## Konfigurasi
 
-Mengaktifkan *module* ``mod_rewrite``
+###Mengaktifkan *mod_rewrite*
+1. Edit konfigurasi 000-default.
 ```
 $ cd /etc/apache2/sites-enabled
 $ sudo nano 000-default.conf
 ```
-Menambahkan baris di dalam block ``<VirtualHost *:80>``
+2. Tambahkan baris di dalam block ``<VirtualHost *:80>``.
 ```
 ...
 <Directory /var/www/html>
@@ -83,21 +98,22 @@ Options Indexes FollowSymLinks MultiViews
 	AllowOverride All
 	Order allow,deny allow from all
 </Directory>
-…
+...
 ```
-- Overwrite
-- Close
+3. Simpan (Ctrl+O) dengan nama yang sama (Enter).
+4. Tutup file (Ctrl+X).
+5. Restart apache.
 ```
 $ sudo service apache2 restart
 ```
 
 
-## *Maintenance* (Opsional)
+
+<!--## *Maintenance* (Opsional)-->
 
 
 ## Otomatisasi
-Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komputer masing-masing.
-
+Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan web server masing-masing. Diperlukan konfigurasi untuk mengaktifkan *mod_rewrite*. Pengaturan nama database, username, dan password MySQL semestinya bisa dikustomisasi (tidak dibuat otomatis).
 
 ## Cara Pemakaian
 
@@ -107,7 +123,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 
 - Fungsi-fungsi utama
 
-1. *Manage* Konten
+1. Mengelola konten
 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_1.PNG)
 
@@ -143,7 +159,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan komp
 ## Pembahasan
 
 - Kelebihan : 
-1. Mudah di operasikan
+1. Mudah dioperasikan
 2. Fitur yang bagus
 3. *Blocks, pages, menus* semua mudah digunakan
 4. Memiliki *pre-defined 'positions'* untuk menempatkan konten begitu baik.
@@ -187,3 +203,4 @@ Namun, dari keunggulan yang diberikan, masih terdapat beberapa kekurangan, di an
 1. https://dev.subrion.org/projects/subrion-cms/wiki/Installation
 2. https://www.cmscritic.com/dir/products/subrion/
 3. http://www.geekycorner.com/software-reviews/subrion-16.html
+
