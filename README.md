@@ -6,7 +6,7 @@
 
 ## Sekilas Tentang
 
-Subrion CMS adalah PHP sistem manajemen konten yang *powerful* dan mudah digunakan. Subrion muncul dengan banyak fitur, termasuk bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan *smartphone*, yang memungkinkan pengguna dapat mengelola konten dengan mudah. Fitur manajemen untuk bidang item *listing* juga ada. *Field* yang berhubungan dengan anggota, daftar otomatis, daftar *real estate*, kupon, atau apapun, dapat dengan mudah diperpanjang dengan fitur tambahan. *Field* ini dapat dibuat dalam berbagai bentuk, termasuk *field* teks, WYSIWYG, *checkbox*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
+Subrion CMS adalah sistem manajemen konten yang *powerful* dan mudah digunakan. Subrion muncul dengan banyak fitur, termasuk bebas menyunting *source code*-nya, izin per-halaman, *user activity monitoring*, dan banyak lagi. Pilihan yang sempurna untuk setiap solusi dari *entry* sampai ke tingkat perusahaan. Dashboard Admin Subrion juga sepenuhnya responsif, sehingga dapat dilihat melalui tablet dan *smartphone*, yang memungkinkan pengguna dapat mengelola konten dengan mudah. Fitur manajemen untuk bidang item *listing* juga ada. *Field* yang berhubungan dengan anggota, daftar otomatis, daftar *real estate*, kupon, atau apapun, dapat dengan mudah diperpanjang dengan fitur tambahan. *Field* ini dapat dibuat dalam berbagai bentuk, termasuk *field* teks, WYSIWYG, *checkbox*, radio, gambar, lampiran, dan banyak lagi, semua demi kenyamanan panel admin Subrion.
 
 
 ## Instalasi
@@ -136,7 +136,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan web 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/page_5.PNG)
 
 
-2. *Manage* Template
+2. Mengelola template
 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/template_1.PNG)
 
@@ -145,7 +145,7 @@ Tidak dilakukan otomatisasi karena kebutuhan instalasi Subrion menyesuaikan web 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/template_3.PNG)
 
 
-3. *Manage* Plugin
+3. Mengelola plugin
 
 ![](https://raw.githubusercontent.com/azmiiqbalgp/komdat_subrion/master/plugin_1.PNG)
 
